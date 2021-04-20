@@ -14,19 +14,22 @@ addToDoButton.addEventListener('click', function () {
         inputField.value = ""
         let paragraph = listItem.querySelector('.paragraph-styling')
 
-        paragraph.addEventListener('click', function () {
+        paragraph.addEventListener('click',paragraphStyling)
+        function paragraphStyling() {
             if (paragraph.classList.contains("line-through")) {
                 paragraph.classList.remove("line-through")
             } else {
                 paragraph.classList.add("line-through")
             }
-        })
+        }
         
         let deletebtn = listItem.querySelector('.deletebtn')
-        deletebtn.addEventListener('click', function () {
+
+        deletebtn.addEventListener('click',removeConfirmation)
+        function removeConfirmation() {
             if (window.confirm('Deseja deletar este item?')) {
                 ToDoList.removeChild(listItem)
             }
-        })
+        }
     }
 })
