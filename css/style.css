@@ -34,6 +34,10 @@ ul{
     font:monospace;
     outline: none;
     font-size: 1rem;
+    transition: all 0.2s;
+}
+.addToDo:hover{
+    filter:brightness(0.9);
 }
 .deletebtn{
     height: 1.4rem;
@@ -45,6 +49,10 @@ ul{
     outline: none;
     margin-left: 0.5rem;
     font-weight: bold;
+    transition: all 0.2s;
+}
+.deletebtn:hover{
+    filter:brightness(0.9);
 }
 .to-dos{
     margin-top: 2rem;
